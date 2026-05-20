@@ -38,7 +38,76 @@
             <div class="container">
                 <h1>Ajukan Layanan Akademik</h1>
                 <p class="section-desc">Lengkapi form di bawah untuk mengajukan layanan akademik Anda.</p>
-                <p><em>Form pengajuan akan tersedia pada tahap berikutnya.</em></p>
+                <!-- Awal Forms -->
+                <form action="#" method="post" class="form-card">
+                    <fieldset>
+                        <legend>Data pengajuan</legend>
+                        <!-- Nama, NIM, Prodi, Layanan, Tangal, Keterangan, Button -->
+
+                        <!-- Field Nama -->
+                        <div class="form-group">
+                            <label for="fullname">Nama Lengkap</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Masukkan Nama Anda" required>
+                        </div>
+
+                        <!-- NIM dan Prodi -->
+                        <div class="form-row">
+                            <!-- NIM -->
+                            <div class="form-group">
+                                <label for="nim">NIM</label>
+                                <input type="text" id="nim" name="nim" placeholder="Contoh: 12345678" required maxlength="9">
+                            </div>
+                            
+                            <!-- Prodi -->
+                            <div class="form-group">
+                                <label for="prodi">Program Studi</label>
+                                <select name="prodi" id="prodi" required>
+                                    <option>_Pilih Program Studi_</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Manajemen">Manajemen</option>
+                                    <option value="Akuntansi">Akuntansi</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Layanan dan Tanggal -->
+                        <div class="form-row">
+                            <!-- Layanan -->
+                            <div class="form-group">
+                                <label for="layanan">Jenis Layanan</label>
+                                <select name="layanan" id="layanan" required>
+                                    <option>_Pilih layanan_</option>
+                                    <option value="SKA">SKA - Surat Aktif Kuliah</option>
+                                    <option value="CAK">CAK - Cuti Akademik</option>
+                                    <option value="TNM">TNM - Transkip Nilai</option>
+                                    <option value="PDA">PDA - Perubahan Data</option>
+                                </select>
+                            </div>
+
+                            <!-- Tanggal -->
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal pengajuan</label>
+                                <input type="date" id="tanggal" name="tanggal" required>
+                            </div>
+                        </div>
+
+                         <!-- Keterangan -->
+                        <div class="form-group">
+                            <label for="Keterangan">Keterangan (opsional)</label>
+                            <textarea name="Keterangan" id="Keterangan" placeholder="Jelaskan Alasan Anda Pengajuan Anda..." rows="4"></textarea>
+                        </div>
+
+                        <!-- Tombol Submit dan Reset -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">🚀Ajukan Sekarang</button>
+                            <button type="reset" class="btn btn-outline">🔄️Reset</button>
+                        </div>
+                        
+
+                    </fieldset>
+                </form>
+                <!-- Akhir Forms -->
             </div>
         </section>
     </main>
